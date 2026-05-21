@@ -17,7 +17,7 @@ export default function WebsiteNavbar() {
       <header
         className="
           fixed top-0 left-0 right-0 z-50
-          h-16 lg:h-20
+          h-20 lg:h-24
           flex items-center
           px-4 sm:px-6 lg:px-10
           bg-black/40 backdrop-blur-xl
@@ -34,7 +34,7 @@ export default function WebsiteNavbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-[11px] xl:text-[12px] font-medium uppercase tracking-[0.22em] text-white mr-8 xl:mr-10">
+        <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-[13px] xl:text-[14px] font-medium uppercase tracking-[0.22em] text-white mr-8 xl:mr-10">
           <Link href="/products"    className="whitespace-nowrap transition-colors duration-300 hover:text-white/60">Products</Link>
           <Link href="/collections" className="whitespace-nowrap transition-colors duration-300 hover:text-white/60">Collections</Link>
           <Link href="/projects"    className="whitespace-nowrap transition-colors duration-300 hover:text-white/60">Projects</Link>
