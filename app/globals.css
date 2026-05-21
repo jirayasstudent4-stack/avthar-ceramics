@@ -2,10 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  --navbar-h: CSS custom property consumed by any component that needs
+  to clear the fixed navbar without hardcoding pixel values.
+  h-16 = 64px mobile, h-20 = 80px desktop.
+*/
+:root {
+  --navbar-h: 64px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --navbar-h: 80px;
+  }
+}
+
+html {
+  /*
+    overflow-x:hidden on html (not just body) is required to prevent
+    horizontal scroll on iOS Safari — the browser ignores body-only.
+  */
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html,
 body,
 :root {
-  width: 100%;
   min-height: 100%;
 }
 
@@ -13,10 +36,12 @@ body {
   background: #ffffff;
   color: #111111;
   overflow-x: hidden;
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
+  min-width: 0; /* prevents flex/grid children from overflowing their container */
 }
 
 .container-width {
@@ -24,11 +49,12 @@ body {
 }
 
 .section-spacing {
-  @apply py-24 md:py-36;
+  @apply py-16 sm:py-24 md:py-36;
 }
 
 .luxury-title {
-  @apply text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[1];
+  font-size: clamp(2.2rem, 6vw, 6rem);
+  @apply font-semibold tracking-tight leading-[1];
 }
 
 .glass-effect {

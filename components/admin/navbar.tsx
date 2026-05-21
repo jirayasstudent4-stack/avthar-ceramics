@@ -45,7 +45,7 @@ export default function Navbar() {
   const title = getPageTitle(pathname);
 
   return (
-    <header className="sticky top-0 z-40 h-[82px] bg-white/80 backdrop-blur-xl border-b border-gray-200/70 px-8 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 h-16 md:h-20 bg-[#0B1020]/80 backdrop-blur-xl">
       {/* LEFT */}
       <div className="flex items-center gap-6">
         {/* DYNAMIC TITLE */}
