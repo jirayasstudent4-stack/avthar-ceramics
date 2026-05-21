@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "products": "Produits",
+    "collections": "Collections",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Conçu Pour L'Architecture Moderne",
+    "subtitle": "Surfaces céramiques de luxe pour des intérieurs intemporels."
+  }
+}

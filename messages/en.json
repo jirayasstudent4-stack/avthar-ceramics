@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "products": "Products",
+    "collections": "Collections",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Crafted For Modern Architecture",
+    "subtitle": "Luxury ceramic surfaces for timeless interiors."
+  }
+}
